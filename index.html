@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>hello</title>
+	</head>
+	<body>
+		<main class="light">
+			<h1>Titre</h1>
+			<h3>Sous Titre</h3>
+			<p class="success-text">Validé</p>
+			<p class="warning-text">Warning</p>
+			<p class="danger-text">Attention</p>
+		</main>
+		<style>
+            :root {
+                --body-color-light: black;
+                --body-background-light: white;
+                --success-light: green;
+                --warning-light: orange;
+                --danger-light: red;
+                --body-color-dark: white;
+                --body-background-dark: #323232;
+                --success-dark: limegreen;
+                --warning-dark: orangered;
+                --danger-dark: salmon;
+            }
+			* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+			}
+            body .light{
+                background-color: var(--body-background-light);
+            }
+            h1, h2, .light {
+                color: var(--body-color-light);
+            }
+            .success-text .light{
+                color: var(--success-light);
+            }
+            .warning-text .light{
+                color: var(--warning-light);
+            }
+            .danger-text .light{
+                color: var(--danger-light);
+            }
+            </style>
+	</body>
+</html>
